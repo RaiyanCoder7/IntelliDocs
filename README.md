@@ -1,16 +1,157 @@
-# React + Vite
+🦉 Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Owl AI is an intelligent research assistant designed to help researchers, students, and knowledge workers collect, organize, and extract valuable insights from their documents and notes. With AI-powered features, Owl AI transforms how you manage and analyze your research materials.
 
-Currently, two official plugins are available:
+✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🏠 Home & Authentication
 
-## React Compiler
+· Modern Landing Page: Engaging introduction to Owl AI's capabilities
+· User Authentication: Secure login and registration system
+· Get Started Free: Easy onboarding for new users
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+📊 Dashboard & Document Management
 
-## Expanding the ESLint configuration
+· Smart Document Management: Organize research papers, notes, and documents
+· AI-Powered Categorization: Automatic tagging and organization
+· Quick Actions Panel:
+  · Create new documents
+  · Upload files (PDFs, text documents)
+  · Access AI analysis tools
+  · Application settings
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔍 Advanced Search & Analysis
+
+· Semantic Search: Find content using context-aware search that understands meaning
+· AI-Powered Insights:
+  · Automatic Summaries: Generate concise document summaries
+  · Key Point Extraction: Identify and extract main ideas
+  · Sentiment Analysis: Analyze tone and emotional content
+  · Full Analysis: Comprehensive insights in one click
+
+📁 Document Organization
+
+· Categorized document storage (Research, Articles, etc.)
+· File type support including PDFs
+· Upload tracking with timestamps
+· Structured document previews
+
+🛠️ Technology Stack
+
+Frontend
+
+· Vite - Next-generation frontend tooling
+· React 18+ - Modern UI library with hooks
+· HTML5 - Semantic markup
+· CSS3 - Modern styling and responsive design
+· JavaScript ES6+ - Client-side functionality
+
+Backend
+
+· Node.js - Runtime environment
+· Express.js - Web application framework
+· MongoDB - NoSQL database for document storage
+· Mongoose - MongoDB object modeling
+
+Deployment & Hosting
+
+· Render - Backend deployment platform
+· Vercel - Frontend deployment platform
+
+🚀 Getting Started
+
+Prerequisites
+
+· Node.js (v16 or higher)
+· MongoDB database
+· npm or yarn package manager
+
+Installation
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/your-username/owl-ai.git
+   cd owl-ai
+   ```
+2. Install dependencies
+   ```bash
+   # Install backend dependencies
+   cd backend
+   npm install
+   
+   # Install frontend dependencies  
+   cd ../frontend
+   npm install
+   ```
+3. Environment Setup
+   Create a .env file in the backend directory:
+   ```env
+   MONGODB_URI=your_mongodb_connection_string
+   PORT=5000
+   ```
+4. Run the application
+   ```bash
+   # Start backend server (from backend directory)
+   npm run dev
+   
+   # Start frontend development server (from frontend directory)
+   npm run dev
+   ```
+5. Access the application
+   · Frontend: http://localhost:3000
+   · Backend API: http://localhost:5000
+
+🎯 Usage
+
+1. Registration & Login
+   · Create a new account or sign in to existing account
+   · Secure authentication system
+2. Document Management
+   · Upload PDFs and documents through the dashboard
+   · Organize files into categories (Research, Articles, etc.)
+   · View uploaded documents with preview information
+3. AI Analysis
+   · Select documents for analysis
+   · Choose from multiple analysis types:
+     · Summary: Get concise overview
+     · Key Points: Extract main ideas
+     · Sentiment: Analyze emotional tone
+     · Full Analysis: Comprehensive insights
+4. Advanced Search
+   · Use semantic search to find content by meaning
+   · Context-aware results based on document content
+
+🌐 Deployment
+
+Frontend (Vercel)
+
+```bash
+npm run build
+vercel --prod
+```
+
+Backend (Render)
+
+· Connect GitHub repository to Render
+· Set environment variables
+· Deploy automatically on push to main branch
+
+🤝 Contributing
+
+We welcome contributions! Please feel free to submit pull requests or open issues for bugs and feature requests.
+
+📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+🆘 Support
+
+For support and questions:
+
+· Open an issue on GitHub
+· Check our documentation
+· Contact our support team
+
+---
+
+Owl AI - Making research smarter, one document at a time. 🦉
