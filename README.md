@@ -48,8 +48,6 @@ Owl AI is an intelligent research assistant designed to help researchers, studen
 ### AI Analysis
 ![AI Analysis](screenshots/analysis.png)
 
-*(Add your screenshots in the `screenshots` folder in your repo)*
-
 ---
 
 ## 🛠️ Technology Stack
