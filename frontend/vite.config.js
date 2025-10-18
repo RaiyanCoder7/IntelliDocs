@@ -6,5 +6,10 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'dist'
+  },
+  // Add this for better routing support
+  base: './',
+  optimizeDeps: {
+    include: ['react', 'react-dom']
   }
 })
