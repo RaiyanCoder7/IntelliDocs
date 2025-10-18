@@ -1,0 +1,272 @@
+.aiAnalysis {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.header h3 {
+  color: #2d3748;
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.actionButton,
+.fullAnalysisButton {
+  padding: 0.5rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  background: white;
+  color: #4a5568;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.actionButton:hover:not(:disabled),
+.fullAnalysisButton:hover:not(:disabled) {
+  background: #4299e1;
+  color: white;
+  border-color: #4299e1;
+  transform: translateY(-1px);
+}
+
+.actionButton:disabled,
+.fullAnalysisButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.fullAnalysisButton {
+  background: #805ad5;
+  color: white;
+  border-color: #805ad5;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: #718096;
+}
+
+.spinner {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #4299e1;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.results {
+  margin-top: 1rem;
+}
+
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 1rem;
+}
+
+.tab {
+  background: none;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #718096;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.tab:hover {
+  background: #f7fafc;
+  color: #4a5568;
+}
+
+.tab.active {
+  background: #4299e1;
+  color: white;
+}
+
+.tabContent h4 {
+  color: #2d3748;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.summaryBox {
+  background: #f7fafc;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #4299e1;
+}
+
+.summaryBox p {
+  line-height: 1.6;
+  color: #4a5568;
+  margin-bottom: 1rem;
+}
+
+.stats {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+  color: #718096;
+}
+
+.keyPointsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.keyPoint {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f7fafc;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  border-left: 4px solid #48bb78;
+}
+
+.pointNumber {
+  background: #48bb78;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.sentimentResult {
+  text-align: center;
+  padding: 2rem;
+}
+
+.sentimentBadge {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.confidence {
+  font-size: 1.2rem;
+  color: #4a5568;
+  margin-bottom: 0.5rem;
+}
+
+.analysis {
+  color: #718096;
+  font-style: italic;
+}
+
+.note {
+  color: #a0aec0;
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+.placeholder {
+  text-align: center;
+  padding: 2rem;
+  color: #718096;
+}
+
+.placeholderIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.featureList {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+  text-align: left;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.featureList li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f7fafc;
+}
+
+.message {
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.success {
+  background: #c6f6d5;
+  color: #22543d;
+  border: 1px solid #9ae6b4;
+}
+
+.error {
+  background: #fed7d7;
+  color: #c53030;
+  border: 1px solid #feb2b2;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .actions {
+    justify-content: center;
+  }
+  
+  .stats {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .tabs {
+    flex-wrap: wrap;
+  }
+}
