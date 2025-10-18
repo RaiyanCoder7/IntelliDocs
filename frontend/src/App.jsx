@@ -2,9 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import styles from './App.module.css';
 import './index.css';
-import Login from './pages/Login.jsx';
-import Register from './pages/Register.jsx';
-import Dashboard from './pages/Dashboard.jsx';
+import Login from './Pages/Login.jsx';
+import Register from './Pages/Register.jsx';
+import Dashboard from './Pages/Dashboard.jsx';
 
 // Home component - defined here since we don't have a separate Home.jsx yet
 function Home() {
